@@ -10,7 +10,7 @@ export const journeyData = [
       },
       {
         month: "January-",
-        title: "Discovering Advanced Technologies",
+        title: "Discovering New Technologies",
         description: "Started exploring Next.js and TypeScript out of curiosity, learning their core concepts along the way"       
       },
     ]
