@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <section className="h-40 md:h-64 my-[1em]">
-      <div className="h-full bg-[url('assets/yokai.jpg')] bg-cover bg-center">
+      <div className="h-full bg-[url('assets/images/yokai.jpg')] bg-cover bg-center">
         <div className="max-w-4xl mx-auto h-full px-5 flex flex-col items-center justify-center z-50">
           <h1 className='w-full bg-white text-black uppercase text-base font-medium text-end px-1 md:hidden'>Elisha John D. Ragas</h1>
           <div className='text-white text-center'>
