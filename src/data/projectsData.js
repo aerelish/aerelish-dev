@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Quickit",
-    image: "assets/images/quickit.png",
+    image: "/assets/images/quickit.png",
     date: "Jun 2025",
     description: "My first fullstack app project — still in development, but designed to be an all-in-one productivity tool for managing to-dos, notes, reminders and more in a clean, fast interface.",
     url: "https://quickit-eight.vercel.app/",
@@ -19,7 +19,7 @@ export const projectsData = [
   {
     id: 2,
     title: "Placeholder",
-    image: "assets/images/placeholder.png",
+    image: "/assets/images/placeholder.png",
     date: "Jun 2025",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.",
     tech: [
