@@ -12,6 +12,7 @@ export const projectsData = [
       { iconName: "NodeJS", background: false },
       { iconName: "Express", background: true },
       { iconName: "PostgreSQL", background: false },
+      { iconName: "Tailwind", background: false },
     ],
   },
 ];
