@@ -12,7 +12,7 @@ export const techStack = [
   },
   {
     title: "BACKEND",
-    description: "I work with Node.js, Express, and SQL databases, and I'm currently expanding my skills with C# and Python.",
+    description: "I mainly work with Node.js, Express, and SQL databases, but I also dabble in Python and MongoDB from time to time.",
     icons: [
       { iconName: "NodeJS", alt: "nodejs-icon", background: false },
       { iconName: "Express", alt: "express-icon", background: true },
