@@ -56,11 +56,12 @@ function Projects({ limit }) {
           </div>
           
         </div>
+        {/* TODO: Add a DialogBox that Opens Image when Clicking */}
         <div className="flex-1">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-cover border border-white/10 rounded-lg"
           />
         </div>
       </div>
