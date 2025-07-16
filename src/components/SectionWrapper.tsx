@@ -1,6 +1,18 @@
 import { MdDoubleArrow } from "react-icons/md";
 
-function SectionWrapper({ title, subtitle, link, children }) {
+type SectionWrapperProps = {
+  title: string,
+  subtitle?: string,
+  link?: string,
+  children: React.ReactNode
+};
+
+export default function SectionWrapper({
+  title,
+  subtitle,
+  link,
+  children
+}: SectionWrapperProps) {
   return (
     <div className="max-w-4xl mt-12 pb-2 px-4 mx-auto text-zinc-100">
       {title && (
@@ -22,5 +34,3 @@ function SectionWrapper({ title, subtitle, link, children }) {
     </div>
   )
 }
-
-export default SectionWrapper

@@ -30,14 +30,14 @@ function Footer() {
   return (
     <footer className="max-w-4xl mx-auto px-5 z-40 flex items-center justify-between py-[1em]">
       <p className="text-md text-[var(--accent-color)]">
-        &#169; 
+        &#169;
         2025 {" "}
         <span className="uppercase">aerelish</span>
       </p>
       <div className="flex gap-1.5 text-[var(--accent-color)] text-xl">
         {links.map((link, index) => {
           return (
-            <a 
+            <a
               key={index}
               href={link.link}
               target="_blank"

@@ -1,6 +1,13 @@
-import { socialLinks } from "../../data/socialLinks"
+import { socialLinks } from "@/data/socialLinks"
 
-const ContactLink = ({link, icon, name, children}) => {
+type ContactLinkProps = {
+  link?: string,
+  icon: string,
+  name: string,
+  children: React.ReactNode
+}
+
+const ContactLink = ({ link, icon, name, children }: ContactLinkProps) => {
   return (
     <a
       href={link}
@@ -29,14 +36,14 @@ function Contact() {
         Need a developer for your next project? Let's connect.
       </p>
       <div className="flex gap-3">
-         <ContactLink 
+        <ContactLink
           link={socialLinks.gmail}
           icon="assets/icons/gmail.svg"
           name="gmail"
         >
           Email Me
         </ContactLink>
-        <ContactLink 
+        <ContactLink
           link={socialLinks.linkedIn}
           icon="assets/icons/linkedin.svg"
           name="linkedin"
