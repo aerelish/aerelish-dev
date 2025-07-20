@@ -1,4 +1,20 @@
-export const projectsData = [
+import { TechIconName } from "@/data/techStackData";
+
+type ProjectsSection = {
+  id: number,
+  title: string,
+  image: string,
+  date: string,
+  description: string;
+  url: string,
+  git: string,
+  tech: {
+    iconName: TechIconName;
+    background: boolean;
+  }[];
+};
+
+export const projectsData: ProjectsSection[] = [
   {
     id: 1,
     title: "Quickit",

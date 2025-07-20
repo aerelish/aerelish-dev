@@ -1,8 +1,4 @@
 export const sectionsData = [
-  // {
-  //   id: "hero",
-  //   component: "Hero"
-  // },
   {
     id: "services",
     component: "Services",

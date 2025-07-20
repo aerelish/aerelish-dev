@@ -1,4 +1,14 @@
-export const techStack = [
+type TechStackSection = {
+  title: string;
+  description: string;
+  icons: {
+    iconName: TechIconName;
+    alt: string;
+    background: boolean;
+  }[];
+};
+
+export const techStack: TechStackSection[] = [
   {
     title: "FRONTEND",
     description: "I mostly use ReactJS and Tailwind CSS — React for building interactive UIs, and Tailwind for fast, flexible styling without writing custom CSS.",
@@ -34,7 +44,23 @@ export const techStack = [
   },
 ];
 
-export const techIcons = {
+export type TechIconName =
+  | "HTML5"
+  | "CSS3"
+  | "JavaScript"
+  | "React"
+  | "Tailwind"
+  | "NodeJS"
+  | "Express"
+  | "PostgreSQL"
+  | "Prisma"
+  | "Git"
+  | "NPM"
+  | "Figma"
+  | "Docker"
+  | "Postman";
+
+export const techIcons: Record<TechIconName, string> = {
   HTML5: "/assets/icons/html-5.svg",
   CSS3: "/assets/icons/css-3.svg",
   JavaScript: "/assets/icons/javascript.svg",

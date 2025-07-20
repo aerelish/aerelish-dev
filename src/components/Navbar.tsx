@@ -18,14 +18,22 @@ const navLinks = [
   },
 ];
 
-const NavItem = ({label, link}) => {
-  
+type NavItemProps = {
+  label: string,
+  link: string
+}
+
+const NavItem = ({
+  label,
+  link
+}: NavItemProps) => {
+
   const location = useLocation();
   const isSelectedPage = location.pathname === link;
 
   return (
     <a
-      href={link} 
+      href={link}
       className={`relative inline-block uppercase text-base tracking-[.2em] hover:text-[var(--accent-color)] group`}
     >
       {label}
@@ -41,15 +49,15 @@ function Navbar() {
         <div className="flex justify-center">
           <div className="flex items-center space-x-5 text-lg">
             {navLinks.map((navlink) => (
-              <NavItem 
-                key={navlink.id} 
+              <NavItem
+                key={navlink.id}
                 label={navlink.label}
                 link={navlink.link}
               />
             ))}
           </div>
         </div>
-          
+
         {/* Mobile View */}
         {/* <div className="flex justify-between md:hidden">
           <a 
@@ -63,7 +71,7 @@ function Navbar() {
         </div> */}
 
       </div>
-      
+
     </nav>
   )
 }

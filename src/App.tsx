@@ -1,23 +1,28 @@
+import { FC } from 'react'
 // import packages
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // import components
-import SectionWrapper from './components/SectionWrapper';
-import Navbar from './components/Navbar';
-import Hero from './components/sections/Hero';
-import About from './components/pages/About';
-import Services from './components/sections/Services';
-import TechStack from './components/sections/TechStack';
-import Projects from './components/sections/Projects';
-import Journey from './components/sections/Journey';
-import Contact from './components/sections/Contact';
-import Footer from './components/Footer';
+import SectionWrapper from '@/components/SectionWrapper';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/sections/Hero';
+import About from '@/components/pages/About';
+import Services from '@/components/sections/Services';
+import TechStack from '@/components/sections/TechStack';
+import Projects from '@/components/sections/Projects';
+import Journey from '@/components/sections/Journey';
+import Contact from '@/components/sections/Contact';
+import Footer from '@/components/Footer';
 
 // import data
-import { sectionsData } from './data/sectionsData';
-import { pageData } from './data/pageData';
+import { sectionsData } from '@/data/sectionsData';
+import { pageData } from '@/data/pageData';
 
-const componentList = {
+type ComponentProps = {
+  limit?: number
+}
+
+const componentList: Record<string, FC<ComponentProps>> = {
   Services,
   TechStack,
   Projects,
@@ -28,8 +33,8 @@ const componentList = {
 function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
-      <Hero/>
+      <Navbar />
+      <Hero />
       <Routes>
         {/* Home */}
         <Route
@@ -44,7 +49,7 @@ function App() {
 
                 // in case want to put limit to content
                 const sectionContent = section.limit ? (
-                  <Component limit={section.limit}/>
+                  <Component limit={section.limit} />
                 ) : (
                   <Component />
                 )
@@ -59,7 +64,7 @@ function App() {
                     {sectionContent}
                   </SectionWrapper>
                 ) : (
-                  <Component key={section.id}/>
+                  <Component key={section.id} />
                 )
               })}
             </>
@@ -106,7 +111,7 @@ function App() {
         />
 
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   )
 }
