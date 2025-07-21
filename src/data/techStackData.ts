@@ -13,9 +13,10 @@ export const techStack: TechStackSection[] = [
     title: "FRONTEND",
     description: "I mostly use ReactJS and Tailwind CSS — React for building interactive UIs, and Tailwind for fast, flexible styling without writing custom CSS.",
     icons: [
+      { iconName: "JavaScript", alt: "javascript-icon", background: false },
+      { iconName: "TypeScript", alt: "typecript-icon", background: false },
       { iconName: "HTML5", alt: "html5-icon", background: false },
       { iconName: "CSS3", alt: "css3-icon", background: false },
-      { iconName: "JavaScript", alt: "javascript-icon", background: false },
       { iconName: "React", alt: "react-icon", background: false },
       { iconName: "Tailwind", alt: "tailwind-icon", background: false },
     ],
@@ -33,13 +34,14 @@ export const techStack: TechStackSection[] = [
   {
     title: "SOFTWARE TOOLS",
     description:
-      "Experienced with tools like Git, NPM, Figma, Docker, and Postman for version control, design, API testing, and package management.",
+      "Skilled in Git, NPM, Figma, Docker, and Postman, with experience deploying apps on AWS and Vercel.",
     icons: [
       { iconName: "Git", alt: "git-icon", background: false },
       { iconName: "NPM", alt: "npm-icon", background: false },
       { iconName: "Figma", alt: "figma-icon", background: false },
       { iconName: "Docker", alt: "docker-icon", background: false },
       { iconName: "Postman", alt: "postman-icon", background: false },
+      { iconName: "AWS", alt: "aws-icon", background: true },
     ],
   },
 ];
@@ -58,7 +60,9 @@ export type TechIconName =
   | "NPM"
   | "Figma"
   | "Docker"
-  | "Postman";
+  | "Postman"
+  | "AWS"
+  | "TypeScript";
 
 export const techIcons: Record<TechIconName, string> = {
   HTML5: "/assets/icons/html-5.svg",
@@ -75,4 +79,6 @@ export const techIcons: Record<TechIconName, string> = {
   Figma: "/assets/icons/figma.svg",
   Docker: "/assets/icons/docker.svg",
   Postman: "/assets/icons/postman.svg",
+  AWS: "/assets/icons/aws.svg",
+  TypeScript: "/assets/icons/typescript.svg"
 };
