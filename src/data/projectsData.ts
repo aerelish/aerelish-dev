@@ -21,9 +21,11 @@ export const projectsData: ProjectsSection[] = [
     image: "/assets/images/quickit.png",
     date: "Jun 2025",
     description: "My first fullstack app project — still in development, but designed to be an all-in-one productivity tool for managing to-dos, notes, reminders and more in a clean, fast interface.",
-    url: "https://quickit-eight.vercel.app/",
+    // url: "https://quickit-eight.vercel.app/",
+    url: "https://quickit.aerelish.dev/",
     git: "https://github.com/aerelish/quickit",
     tech: [
+      { iconName: "JavaScript", background: false },
       { iconName: "React", background: false },
       { iconName: "NodeJS", background: false },
       { iconName: "Express", background: true },
